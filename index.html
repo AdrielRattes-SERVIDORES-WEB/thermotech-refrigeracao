@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thermotech Refrigeração — Limpeza e Manutenção de Ar Condicionado em Paiçandu PR</title>
+  <meta name="description" content="Thermotech Refrigeração em Paiçandu PR. Limpeza, higienização, instalação e manutenção de ar condicionado. Atendimento rápido. WhatsApp (44) 3244-7971.">
+  <meta name="keywords" content="limpeza ar condicionado Paiçandu, manutenção ar condicionado Paiçandu PR, instalação ar condicionado Paiçandu, higienização ar condicionado Paraná, Thermotech Refrigeração">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://thermotech-refrigeracao.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Thermotech Refrigeração — Ar Condicionado em Paiçandu PR">
+  <meta property="og:description" content="Limpeza, higienização e manutenção de ar condicionado em Paiçandu. Ligue agora: (44) 3244-7971">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Thermotech Refrigeração",
+    "description": "Limpeza, higienização, instalação e manutenção de ar condicionado em Paiçandu PR",
+    "telephone": "+554432447971",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. João Batista Gerotto Filho, 56 - Parque Laranjeiras, Paiçandu - PR, 87140-000, Brasil",
+      "addressLocality": "Paiçandu",
+      "addressRegion": "PR",
+      "postalCode": "76940-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-11.7278",
+      "longitude": "-61.7775"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "409"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Paiçandu"
+    },
+    "priceRange": "$$",
+    "openingHours": "Mo-Sa 07:00-18:00",
+    "url": "https://thermotech-refrigeracao.vercel.app"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #050c1a;
+      --navy2: #0a1628;
+      --navy3: #0f2040;
+      --ice: #5ce8ff;
+      --ice2: #a8f0ff;
+      --ice3: #d6faff;
+      --white: #f0f8ff;
+      --gray: #7a9bb5;
+      --accent: #ff6b35;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* Custom cursor */
+    .cursor {
+      position: fixed;
+      width: 12px; height: 12px;
+      background: var(--ice);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s, width 0.2s, height 0.2s, opacity 0.2s;
+      mix-blend-mode: screen;
+    }
+    .cursor-ring {
+      position: fixed;
+      width: 36px; height: 36px;
+      border: 1px solid rgba(92,232,255,0.4);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s ease-out, width 0.3s, height 0.3s;
+    }
+
+    /* Particles canvas */
+    #particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.35; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px;
+      background: linear-gradient(to bottom, rgba(5,12,26,0.95), transparent);
+      backdrop-filter: blur(4px);
+    }
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 3px;
+      color: var(--ice);
+    }
+    .nav-logo span { color: var(--white); }
+    .nav-cta {
+      background: var(--ice);
+      color: var(--navy);
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 10px 24px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+    }
+    .nav-cta:hover { background: var(--ice2); transform: translateY(-1px); }
+
+    /* HERO VIDEO */
+    .hero-video-wrap {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .hero-video-wrap video {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.28;
+      filter: saturate(0.6) brightness(0.7);
+    }
+    .hero-video-wrap::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to right,
+        rgba(5,12,26,0.97) 0%,
+        rgba(5,12,26,0.75) 50%,
+        rgba(5,12,26,0.4) 100%
+      );
+    }
+    /* Fallback image when no video */
+    .hero-video-wrap .hero-fallback {
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(ellipse at 80% 50%, rgba(15,32,64,0.8) 0%, transparent 60%),
+        url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1600&auto=format&fit=crop') center/cover no-repeat;
+      opacity: 0.35;
+      filter: saturate(0.5) brightness(0.6);
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 48px 80px;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    /* AC Unit decoration */
+    .hero-ac-unit {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: min(420px, 40vw);
+      opacity: 0;
+      animation: fadeUp 1s 1s forwards;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .ac-unit-box {
+      background: linear-gradient(145deg, #e8f4f8, #d0e8f0);
+      border-radius: 16px 16px 12px 12px;
+      padding: 18px 24px 24px;
+      position: relative;
+      box-shadow:
+        0 40px 80px rgba(0,0,0,0.5),
+        0 0 60px rgba(92,232,255,0.15),
+        inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+    .ac-unit-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: #4a7a8a;
+      margin-bottom: 6px;
+    }
+    .ac-unit-display {
+      background: #0a1628;
+      border-radius: 8px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .ac-display-temp {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      color: var(--ice);
+      letter-spacing: 2px;
+      text-shadow: 0 0 20px rgba(92,232,255,0.8);
+    }
+    .ac-display-icons { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; }
+    .ac-display-icon { font-size: 12px; opacity: 0.7; }
+    .ac-vents {
+      display: flex;
+      gap: 4px;
+      flex-direction: column;
+    }
+    .ac-vent-line {
+      height: 3px;
+      background: linear-gradient(90deg, #b0ccd4, #7aaab8);
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ac-vent-line::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(92,232,255,0.6), transparent);
+      animation: ventFlow 2s infinite linear;
+    }
+    @keyframes ventFlow { to { left: 200%; } }
+    .ac-unit-shadow {
+      position: absolute;
+      bottom: -30px; left: 10%; right: 10%;
+      height: 30px;
+      background: radial-gradient(ellipse, rgba(92,232,255,0.15) 0%, transparent 70%);
+      filter: blur(8px);
+    }
+
+    /* Cold air stream effect */
+    .air-streams {
+      position: absolute;
+      right: calc(5% + min(420px, 40vw) - 20px);
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      z-index: 2;
+      opacity: 0;
+      animation: fadeIn 0.5s 2s forwards;
+    }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .air-stream {
+      width: 80px;
+      height: 2px;
+      background: linear-gradient(to left, rgba(92,232,255,0.6), transparent);
+      margin: 8px 0;
+      border-radius: 2px;
+      animation: streamFlow 1.8s infinite ease-in-out;
+    }
+    .air-stream:nth-child(2) { width: 120px; animation-delay: 0.3s; }
+    .air-stream:nth-child(3) { width: 60px; animation-delay: 0.6s; }
+    .air-stream:nth-child(4) { width: 100px; animation-delay: 0.15s; }
+    .air-stream:nth-child(5) { width: 70px; animation-delay: 0.45s; }
+    @keyframes streamFlow {
+      0%, 100% { opacity: 0.3; transform: scaleX(0.7); }
+      50% { opacity: 1; transform: scaleX(1); }
+    }
+
+    /* Temp badge */
+    .temp-badge {
+      position: absolute;
+      top: 28%;
+      right: calc(5% + min(420px, 40vw) + 20px);
+      background: rgba(92,232,255,0.08);
+      border: 1px solid rgba(92,232,255,0.2);
+      backdrop-filter: blur(8px);
+      padding: 12px 20px;
+      opacity: 0;
+      animation: fadeUp 0.8s 1.4s forwards;
+      z-index: 2;
+    }
+    .temp-badge-val {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      color: var(--ice);
+      line-height: 1;
+      text-shadow: 0 0 20px rgba(92,232,255,0.5);
+    }
+    .temp-badge-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+
+    .hero-bg-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(92,232,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(92,232,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(92,232,255,0.08) 0%, transparent 70%);
+      top: -200px; left: -200px;
+      pointer-events: none;
+    }
+    .hero-glow2 {
+      position: absolute;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(92,232,255,0.05) 0%, transparent 70%);
+      bottom: 0; right: 100px;
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--ice);
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .hero-tag::before {
+      content: '';
+      display: block;
+      width: 24px; height: 1px;
+      background: var(--ice);
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(72px, 10vw, 140px);
+      line-height: 0.9;
+      letter-spacing: 2px;
+      color: var(--white);
+      margin-bottom: 8px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+    .hero-title .ice { color: var(--ice); }
+    .hero-title .outline {
+      -webkit-text-stroke: 1px rgba(92,232,255,0.5);
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(14px, 2vw, 18px);
+      font-weight: 300;
+      color: var(--gray);
+      max-width: 480px;
+      line-height: 1.7;
+      margin-top: 24px;
+      margin-bottom: 48px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.6s forwards;
+    }
+    .hero-subtitle strong { color: var(--white); font-weight: 600; }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.8s forwards;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--ice);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      text-decoration: none;
+      transition: all 0.25s;
+      clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+    }
+    .btn-primary:hover::after { transform: translateX(100%); }
+    .btn-primary:hover { background: var(--ice2); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(92,232,255,0.25); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gray);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(122,155,181,0.3);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-secondary:hover { color: var(--white); border-color: var(--white); }
+
+    .hero-rating {
+      position: absolute;
+      right: 80px;
+      bottom: 80px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      opacity: 0;
+      animation: fadeUp 0.8s 1s forwards;
+    }
+    .rating-score {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 56px;
+      line-height: 1;
+      color: var(--ice);
+    }
+    .rating-detail { font-size: 12px; color: var(--gray); line-height: 1.8; }
+    .stars { color: #ffd166; font-size: 14px; letter-spacing: 2px; }
+
+    /* DIAGONAL DIVIDER */
+    .divider {
+      position: relative;
+      height: 80px;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .divider::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: -5%;
+      width: 110%;
+      height: 100%;
+      background: var(--navy2);
+      transform: skewY(-2deg);
+      transform-origin: bottom left;
+    }
+
+    /* SERVICES */
+    .services {
+      position: relative;
+      background: var(--navy2);
+      padding: 100px 48px;
+      z-index: 1;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--ice);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: rgba(92,232,255,0.15); max-width: 80px; }
+
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(40px, 6vw, 72px);
+      letter-spacing: 2px;
+      color: var(--white);
+      margin-bottom: 64px;
+      line-height: 1;
+    }
+    .section-title span { color: var(--ice); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2px;
+    }
+
+    .service-card {
+      background: var(--navy3);
+      padding: 40px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, background 0.3s;
+      cursor: default;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 2px;
+      background: linear-gradient(90deg, var(--ice), transparent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s;
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card:hover { transform: translateY(-4px); background: #132035; }
+
+    .service-icon {
+      font-size: 36px;
+      margin-bottom: 24px;
+      display: block;
+      filter: drop-shadow(0 0 12px rgba(92,232,255,0.4));
+    }
+    .service-num {
+      position: absolute;
+      top: 20px; right: 24px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: rgba(92,232,255,0.06);
+      line-height: 1;
+    }
+    .service-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      letter-spacing: 1px;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .service-desc {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* BENEFITS */
+    .benefits {
+      position: relative;
+      background: var(--navy);
+      padding: 100px 48px;
+      z-index: 1;
+    }
+    .benefits-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .benefits-visual {
+      position: relative;
+    }
+    .ac-card {
+      background: var(--navy3);
+      border: 1px solid rgba(92,232,255,0.1);
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ac-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(92,232,255,0.05), transparent);
+    }
+    .ac-temp {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 100px;
+      line-height: 1;
+      color: var(--ice);
+      opacity: 0.15;
+      position: absolute;
+      right: -10px; top: -10px;
+    }
+    .ac-brand {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--ice);
+      margin-bottom: 8px;
+    }
+    .ac-model {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+    .ac-stat { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .ac-stat-bar {
+      flex: 1; height: 3px;
+      background: rgba(92,232,255,0.1);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .ac-stat-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--ice), var(--ice2));
+      border-radius: 2px;
+      animation: fillBar 1.5s ease-out forwards;
+    }
+    @keyframes fillBar { from { width: 0 } }
+    .ac-stat-label { font-size: 11px; color: var(--gray); width: 80px; text-align: right; }
+
+    .benefits-list { list-style: none; }
+    .benefit-item {
+      display: flex;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(92,232,255,0.06);
+    }
+    .benefit-item:last-child { border-bottom: none; }
+    .benefit-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      color: var(--ice);
+      opacity: 0.3;
+      line-height: 1;
+      min-width: 36px;
+    }
+    .benefit-text h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .benefit-text p { font-size: 14px; font-weight: 300; color: var(--gray); line-height: 1.6; }
+
+    /* CTA BAND */
+    .cta-band {
+      position: relative;
+      background: var(--ice);
+      padding: 80px 48px;
+      text-align: center;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .cta-band::before {
+      content: 'LIGUE AGORA';
+      position: absolute;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 200px;
+      letter-spacing: 20px;
+      color: rgba(5,12,26,0.05);
+      white-space: nowrap;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+    .cta-band-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: rgba(5,12,26,0.5);
+      margin-bottom: 16px;
+    }
+    .cta-band-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(36px, 6vw, 72px);
+      color: var(--navy);
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+    .cta-band-phone {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(48px, 8vw, 100px);
+      color: var(--navy);
+      letter-spacing: 4px;
+      display: block;
+      text-decoration: none;
+      margin-bottom: 32px;
+      transition: opacity 0.2s;
+    }
+    .cta-band-phone:hover { opacity: 0.7; }
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--navy);
+      color: var(--ice);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 18px 48px;
+      text-decoration: none;
+      transition: all 0.25s;
+      clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+    }
+    .btn-whatsapp:hover { background: #0a1628; transform: scale(1.03); }
+    .whatsapp-icon { font-size: 20px; }
+
+    /* LOCATION */
+    .location {
+      position: relative;
+      background: var(--navy2);
+      padding: 100px 48px;
+      z-index: 1;
+    }
+    .location-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .location-info h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: var(--white);
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+      line-height: 1;
+    }
+    .location-info h3 span { color: var(--ice); }
+    .info-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      align-items: flex-start;
+    }
+    .info-icon {
+      width: 40px; height: 40px;
+      background: var(--navy3);
+      border: 1px solid rgba(92,232,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .info-content { flex: 1; }
+    .info-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--ice); margin-bottom: 4px; }
+    .info-value { font-size: 15px; font-weight: 600; color: var(--white); }
+    .info-value a { color: inherit; text-decoration: none; }
+    .info-value a:hover { color: var(--ice); }
+
+    .map-placeholder {
+      background: var(--navy3);
+      border: 1px solid rgba(92,232,255,0.1);
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .map-placeholder::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(rgba(92,232,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(92,232,255,0.03) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+    .map-pin { font-size: 48px; filter: drop-shadow(0 0 16px rgba(92,232,255,0.5)); }
+    .map-text { font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 2px; color: var(--ice); }
+    .map-sub { font-size: 12px; color: var(--gray); }
+    .map-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 20px;
+      border: 1px solid rgba(92,232,255,0.3);
+      color: var(--ice);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .map-link:hover { background: rgba(92,232,255,0.1); }
+
+    /* FOOTER */
+    footer {
+      position: relative;
+      background: var(--navy);
+      border-top: 1px solid rgba(92,232,255,0.08);
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: gap;
+      z-index: 1;
+    }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      letter-spacing: 3px;
+      color: var(--ice);
+    }
+    .footer-logo span { color: rgba(255,255,255,0.4); }
+    .footer-copy { font-size: 12px; color: var(--gray); }
+    .footer-seo { font-size: 11px; color: rgba(122,155,181,0.4); max-width: 400px; text-align: right; line-height: 1.6; }
+
+    /* FLOATING WHATSAPP */
+    .float-wa {
+      position: fixed;
+      bottom: 32px; right: 32px;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 24px 14px 18px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 8px 32px rgba(37,211,102,0.4);
+      transition: all 0.3s;
+      clip-path: polygon(12px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 12px);
+      animation: pulse-wa 2.5s infinite;
+    }
+    .float-wa:hover { background: #20ba5a; transform: translateY(-3px); box-shadow: 0 16px 48px rgba(37,211,102,0.5); animation: none; }
+    @keyframes pulse-wa {
+      0%, 100% { box-shadow: 0 8px 32px rgba(37,211,102,0.4); }
+      50% { box-shadow: 0 8px 48px rgba(37,211,102,0.7), 0 0 0 8px rgba(37,211,102,0.1); }
+    }
+    .float-wa-icon { font-size: 22px; }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      /* Hide custom cursor on touch devices */
+      .cursor, .cursor-ring { display: none; }
+      body { cursor: auto; }
+
+      nav { padding: 16px 20px; }
+      .nav-cta { font-size: 12px; padding: 9px 16px; }
+
+      .hero { padding: 90px 20px 60px; min-height: 100svh; }
+
+      /* Reposition AC unit to flow below text instead of overlapping */
+      .hero-ac-unit {
+        position: relative;
+        right: auto; top: auto;
+        transform: none;
+        width: 100%;
+        max-width: 320px;
+        margin: 40px auto 0;
+        opacity: 1;
+        animation: none;
+        order: 10;
+      }
+      .air-streams { display: none; }
+      .temp-badge { display: none; }
+      .hero-rating { display: none; }
+      .hero-glow, .hero-glow2 { display: none; }
+
+      /* Make hero text fill width */
+      .hero-subtitle { max-width: 100%; }
+      .hero-actions { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .btn-primary { width: 100%; justify-content: center; }
+
+      .services { padding: 64px 20px; }
+      .section-title { margin-bottom: 40px; }
+
+      .benefits { padding: 64px 20px; }
+      .benefits-inner { grid-template-columns: 1fr; gap: 48px; }
+
+      .location { padding: 64px 20px; }
+      .location-inner { grid-template-columns: 1fr; gap: 40px; }
+
+      .cta-band { padding: 56px 20px; }
+
+      footer { padding: 32px 20px; flex-direction: column; gap: 16px; text-align: center; }
+      .footer-seo { text-align: center; }
+
+      .float-wa span { display: none; }
+      .float-wa { padding: 14px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/554432447971?text=Olá!%20Vi%20o%20site%20da%20SS%20Refrigeração%20e%20gostaria%20de%20um%20orçamento." class="float-wa" target="_blank" rel="noopener">
+    <span class="float-wa-icon">💬</span>
+    <span>Orçamento grátis</span>
+  </a>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Thermotech <span>Refrigeração</span></div>
+    <a href="https://wa.me/554432447971" class="nav-cta" target="_blank">Chamar no WhatsApp</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Video background: substitua o src pelo arquivo do vídeo gerado -->
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline id="heroBgVideo">
+        <source src="hero-bg.mp4" type="video/mp4">
+      </video>
+      <!-- Fallback enquanto não há vídeo -->
+      <div class="hero-fallback" id="heroFallback"></div>
+    </div>
+
+
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+
+    <div class="hero-tag">Paiçandu — Paraná</div>
+
+    <h1 class="hero-title">
+      AR<br>
+      <span class="ice">GELADO</span><br>
+      <span class="outline">DE VOLTA</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      <strong>Limpeza, higienização e manutenção</strong> de ar condicionado em Paiçandu. Atendimento rápido, técnico qualificado, preço justo.
+    </p>
+
+    <div class="hero-actions">
+      <a href="https://wa.me/554432447971?text=Olá!%20Preciso%20de%20manutenção%20no%20meu%20ar%20condicionado." class="btn-primary" target="_blank">
+        💬 Pedir Orçamento
+      </a>
+      <a href="tel:+554432447971" class="btn-secondary">
+        📞 (44) 3244-7971
+      </a>
+    </div>
+
+    <div class="hero-rating">
+      <div class="rating-score">4.9</div>
+      <div class="rating-detail">
+        <div class="stars">★★★★½</div>
+        <div>409 avaliações</div>
+        <div style="color: var(--ice); font-size: 11px; letter-spacing: 1px;">GOOGLE MAPS</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="section-label">O que fazemos</div>
+    <h2 class="section-title">Nossos <span>Serviços</span></h2>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-icon">🧊</span>
+        <div class="service-num">01</div>
+        <h3 class="service-title">Limpeza e Higienização</h3>
+        <p class="service-desc">Remoção de fungos, bactérias e impurezas. Ar mais puro, mais saúde para sua família. Recomendado a cada 6 meses.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">🔧</span>
+        <div class="service-num">02</div>
+        <h3 class="service-title">Manutenção Preventiva</h3>
+        <p class="service-desc">Verificação completa do sistema, recarga de gás, limpeza dos filtros e revisão elétrica para evitar problemas futuros.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">⚡</span>
+        <div class="service-num">03</div>
+        <h3 class="service-title">Instalação</h3>
+        <p class="service-desc">Instalação profissional de split, janela e piso-teto. Todas as marcas. Suporte técnico incluso na instalação.</p>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">🛠️</span>
+        <div class="service-num">04</div>
+        <h3 class="service-title">Manutenção Corretiva</h3>
+        <p class="service-desc">Diagnóstico e reparo de falhas, vazamentos, problemas de resfriamento e ruídos. Atendimento rápido em Paiçandu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="benefits-inner">
+      <div class="benefits-visual reveal">
+        <div class="ac-card">
+          <div class="ac-temp">❄</div>
+          <div class="ac-brand">Thermotech Refrigeração</div>
+          <div class="ac-model">Diagnóstico Completo</div>
+          <div class="ac-stat">
+            <span style="font-size:11px;color:var(--gray);min-width:90px">Eficiência</span>
+            <div class="ac-stat-bar"><div class="ac-stat-fill" style="width:92%"></div></div>
+            <span class="ac-stat-label">92%</span>
+          </div>
+          <div class="ac-stat">
+            <span style="font-size:11px;color:var(--gray);min-width:90px">Qualidade do ar</span>
+            <div class="ac-stat-bar"><div class="ac-stat-fill" style="width:88%;animation-delay:0.2s"></div></div>
+            <span class="ac-stat-label">88%</span>
+          </div>
+          <div class="ac-stat">
+            <span style="font-size:11px;color:var(--gray);min-width:90px">Economia</span>
+            <div class="ac-stat-bar"><div class="ac-stat-fill" style="width:76%;animation-delay:0.4s"></div></div>
+            <span class="ac-stat-label">-24%</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Por que escolher</div>
+        <h2 class="section-title">Por que a<br><span>Thermotech Refrigeração</span></h2>
+        <ul class="benefits-list">
+          <li class="benefit-item reveal">
+            <div class="benefit-num">01</div>
+            <div class="benefit-text">
+              <h3>Técnico local em Paiçandu</h3>
+              <p>Atendimento rápido porque estamos em Paiçandu. Sem esperar dias para resolver seu problema.</p>
+            </div>
+          </li>
+          <li class="benefit-item reveal">
+            <div class="benefit-num">02</div>
+            <div class="benefit-text">
+              <h3>Preço justo, sem surpresa</h3>
+              <p>Orçamento gratuito antes de qualquer serviço. Você aprova antes, sem cobranças escondidas.</p>
+            </div>
+          </li>
+          <li class="benefit-item reveal">
+            <div class="benefit-num">03</div>
+            <div class="benefit-text">
+              <h3>Todas as marcas atendidas</h3>
+              <p>Samsung, LG, Midea, Gree, Carrier, Electrolux e mais. Residencial e comercial.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="cta-band-label">Atendimento em Paiçandu PR</div>
+    <h2 class="cta-band-title">Fale agora com o técnico</h2>
+    <a href="tel:+554432447971" class="cta-band-phone">(44) 3244-7971</a>
+    <br>
+    <a href="https://wa.me/554432447971?text=Olá!%20Preciso%20de%20serviço%20de%20ar%20condicionado%20em%20Rolim%20de%20Moura." class="btn-whatsapp" target="_blank">
+      <span class="whatsapp-icon">💬</span>
+      Enviar mensagem no WhatsApp
+    </a>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location">
+    <div class="location-inner">
+      <div class="location-info reveal">
+        <h3>Atendemos em<br><span>Paiçandu</span><br>e região</h3>
+        <div class="info-row">
+          <div class="info-icon">📍</div>
+          <div class="info-content">
+            <div class="info-label">Endereço</div>
+            <div class="info-value">Av. João Batista Gerotto Filho, 56 - Parque Laranjeiras, Paiçandu - PR, 87140-000, Brasil<br>Paiçandu — PR</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">📞</div>
+          <div class="info-content">
+            <div class="info-label">Telefone / WhatsApp</div>
+            <div class="info-value"><a href="tel:+554432447971">(44) 3244-7971</a></div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🕐</div>
+          <div class="info-content">
+            <div class="info-label">Horário de atendimento</div>
+            <div class="info-value">Segunda a Sábado<br>07h às 18h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-placeholder reveal">
+        <div class="map-pin">📍</div>
+        <div class="map-text">Paiçandu — PR</div>
+        <div class="map-sub">Av. João Batista Gerotto Filho, 56 - Parque Laranjeiras, Paiçandu - PR, 87140-000, Brasil</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.%20Jo%C3%A3o%20Batista%20Gerotto%20Filho%2C%2056%20-%20Parque%20Laranjeiras%2C%20Pai%C3%A7andu%20-%20PR%2C%2087140-000%2C%20Brasil%2C%20Pai%C3%A7andu%20-%20PR" class="map-link" target="_blank" rel="noopener">
+          → Abrir no Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Thermotech <span>Refrigeração</span></div>
+    <div class="footer-copy">© 2025 Thermotech Refrigeração · Paiçandu PR</div>
+    <div class="footer-seo">Limpeza de ar condicionado Paiçandu · Manutenção ar condicionado PR · Instalação split Paiçandu · Higienização ar condicionado Paraná</div>
+  </footer>
+
+  <script>
+    // Video fallback
+    const vid = document.getElementById('heroBgVideo');
+    const fallback = document.getElementById('heroFallback');
+    if (vid.querySelector('source')) {
+      vid.addEventListener('canplay', () => { fallback.style.display = 'none'; });
+    }
+
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const cursorRing = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; });
+    function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      cursorRing.style.left = rx + 'px';
+      cursorRing.style.top = ry + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.style.width = '20px'; cursor.style.height = '20px'; cursorRing.style.width = '52px'; cursorRing.style.height = '52px'; });
+      el.addEventListener('mouseleave', () => { cursor.style.width = '12px'; cursor.style.height = '12px'; cursorRing.style.width = '36px'; cursorRing.style.height = '36px'; });
+    });
+
+    // Particles
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles = [];
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    resize();
+    window.addEventListener('resize', resize);
+    for (let i = 0; i < 60; i++) {
+      particles.push({
+        x: Math.random() * W, y: Math.random() * H,
+        r: Math.random() * 1.5 + 0.3,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: -Math.random() * 0.4 - 0.1,
+        op: Math.random() * 0.6 + 0.2
+      });
+    }
+    function drawParticles() {
+      ctx.clearRect(0, 0, W, H);
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(92,232,255,${p.op})`;
+        ctx.fill();
+        p.x += p.vx; p.y += p.vy;
+        if (p.y < -10) { p.y = H + 10; p.x = Math.random() * W; }
+        if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
